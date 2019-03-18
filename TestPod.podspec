@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TestPod"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of TestPod."
+  spec.summary      = "Not the example descriptions。"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+			"A long description of TestPod. It should longer than short description."		
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/TestPod"
+  spec.homepage     = "https://github.com/winterYT/TestPod"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -63,7 +64,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
+  spec.platform     = :ios
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/TestPod.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/winterYT/TestPod.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +91,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "Sources/*.{h,m}"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -117,7 +118,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
+  spec.frameworks = "Foundation", "UIKit"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
